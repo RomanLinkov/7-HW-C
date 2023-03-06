@@ -23,9 +23,9 @@ void SearchElement(int[,] twoDimIntArray3)
     int numRow=NumberInput("Введите номер строки искомого элемента: ");
     int numColumn=NumberInput("Введите номер столбца икомого элемента: ");
 
-    if (numRow > twoDimIntArray3.GetLength(0) | numColumn > twoDimIntArray3.GetLength(1))
+    if (numRow >= twoDimIntArray3.GetLength(0) | numColumn >= twoDimIntArray3.GetLength(1))
     {
-        Console.WriteLine($"{numRow}, {numColumn} ->  Такого элемента в массиве нет.");
+        Console.WriteLine($"{numRow}, {numColumn} ->  Такого элемента в массиве нет, нумерация элементов массива ведётся с 0.");
     }
     else
     {
