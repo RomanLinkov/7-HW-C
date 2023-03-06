@@ -10,19 +10,19 @@ Console.WriteLine("Здравствуйте! Спасибо, что провер
 int n=NumberInput("Введите количество строк двумерного массива: ");
 int m=NumberInput("Введите количество столбцов двумерного массива: ");
 
-int min=NumberInput("Введите максимальный элемент массива: ");
-int max=NumberInput("Введите минимальный элемент массива: ");
-
 double[,] twoDimDoubleArray = new double[n,m]; // задавание массива целых чисел
 
-FillTwoDimDoubleArray(twoDimDoubleArray, min, max);
+FillTwoDimDoubleArray(twoDimDoubleArray);
 
 PrintTwoDimDoubleArray(twoDimDoubleArray);
 
-void FillTwoDimDoubleArray(double[,] twoDimDoubleArray2, int min, int max)
+void FillTwoDimDoubleArray(double[,] twoDimDoubleArray2)
 {
     int rows1=twoDimDoubleArray2.GetLength(0); // число строк
     int columns1=twoDimDoubleArray2.GetLength(1); // число столбцов
+
+    int min=NumberInput("Введите максимальный элемент массива: ");
+    int max=NumberInput("Введите минимальный элемент массива: ");
 
     Random rand = new Random();
 
