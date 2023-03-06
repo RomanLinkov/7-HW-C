@@ -38,6 +38,8 @@ void FillTwoDimDoubleArray(double[,] twoDimDoubleArray2, int min, int max)
 
 void PrintTwoDimDoubleArray(double[,] twoDimDoubleArray1)
 {
+    Console.WriteLine("Сгенерированный двумерный массив: ");
+
     int rows=twoDimDoubleArray1.GetLength(0); // число строк
     int columns=twoDimDoubleArray1.GetLength(1); // число столбцов
 

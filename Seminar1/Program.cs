@@ -52,3 +52,9 @@ void PrintTwoDimIntArray(int[,] twoDimIntArray1)
 }
 
 int NumberInput(string msg)
+{
+    System.Console.Write(msg);
+    string value = Console.ReadLine();
+    int result = Convert.ToInt32(value);
+    return result;
+}
